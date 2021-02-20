@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> <%= loginMessage %> </title>
+    <link rel="stylesheet" type="text/css" href="css\styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="bodyStyle">
+    <div class="container pt-4">
+        <form method="post" action="/submitSignUp">
+            <div class="text-center">
+                <img src="img\logo.png" class="img-fluid">
+            </div>
+            <div class="text-center p-4">
+                <h2>Sign Up as student</h2>
+            </div>
+            <div class="col-12">
+                <div class="row p-2">
+                    <div class="col-5 text-right">
+                        <label style="font-weight: bold;">First Name: </label>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" placeholder="Enter your first name" name="firstName" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row p-2">
+                    <div class="col-5 text-right">
+                        <label style="font-weight: bold;">Last Name: </label>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" placeholder="Enter your last name" name="lastName" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row p-2">
+                    <div class="col-5 text-right">
+                        <label style="font-weight: bold;">Username: </label>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control"  placeholder="Enter your user name" name="username">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row p-2">
+                    <div class="col-5 text-right">
+                        <label style="font-weight: bold;">Strongest Technical Skill: </label>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" placeholder="Enter your strongest technical skill" name="technicalSkill">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row p-2">
+                    <div class="col-5 text-right">
+                        <label style="font-weight: bold;">Favorite Subject: </label>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" placeholder="Enter your favourite subject" name="favoriteSubject">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row p-2">
+                    <div class="col-5 text-right">
+                        <label style="font-weight: bold;">Email: </label>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" placeholder="Enter your email" name="email" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row p-2">
+                    <div class="col-5 text-right">
+                        <label style="font-weight: bold;">Password: </label>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" placeholder="Enter your password" name="password" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row p-2">
+                    <div class="col-5 "></div>
+                    <div class="col-4">
+                        <input type="submit" class="btn btn-lg btn-success" value="Sign Up" name="submit">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-4">
+                <a href="http://localhost:3000" class="btn btn-lg btn-primary"> Main Page</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

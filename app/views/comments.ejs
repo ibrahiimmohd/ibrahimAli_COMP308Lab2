@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Comments</title>
+    <link rel="stylesheet" type="text/css" href="css\styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="bodyStyle">
+    <div class="container pt-4">
+        <div class="text-center">
+            <img src="img\logo.png" class="img-fluid">
+        </div>
+        <div class="text-center p-4">
+            <h2>Comments by <%= email  %>, total (<%= totalComments  %>)</h2>
+        </div>
+        <table class="table table-striped text-center m-4">
+            <thead>
+              <tr>
+                <th scope="col">Course Code</th>
+                <th scope="col">Course Name</th>
+                <th scope="col">Comment</th>
+              </tr>
+            </thead>
+            <tbody>
+                <% comments.forEach(function(comment){ %>
+                    <tr>
+                        <td><%= comment.courseCode %></td>
+                        <td><%= comment.courseName %></td>
+                        <td><%= comment.comment %></td>
+                    </tr>
+                <% })%>
+            </tbody>
+        </table>
+        <div class="text-center pt-4">
+            <a href="http://localhost:3000" class="btn btn-lg btn-primary"> Main Page</a>
+        </div>
+    </div>
+</body>
+</html>

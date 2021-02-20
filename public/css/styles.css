@@ -1,0 +1,26 @@
+.textCenter{
+    text-align: center;
+}
+
+.thStyle{
+    text-align: right; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padTop10{
+    padding-top: 10px
+}
+
+.width100{
+    width:100%
+}
+
+.marginTop100{
+    margin-top: 100px
+}
+.bodyStyle{
+    background-color:beige;
+}
+
+
